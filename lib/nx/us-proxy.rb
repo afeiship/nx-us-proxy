@@ -1,6 +1,5 @@
 require "nokogiri"
 require "open-uri"
-require "json"
 
 module Nx
   class UsProxy
@@ -14,7 +13,7 @@ module Nx
       )
 
       # process html use selector
-      rows = doc.css("#proxylisttable tr")
+      rows = doc.css("#proxylisttable tbody tr")
       data = []
       rows.each do |row|
         ip = row.css("td:nth-child(1)").text
