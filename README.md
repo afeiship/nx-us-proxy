@@ -26,3 +26,6 @@ Nx::UsProxy::fetch
     # ...
 ]
 ```
+
+## resources
+- https://www.us-proxy.org/
