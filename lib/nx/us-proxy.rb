@@ -3,12 +3,11 @@ require "open-uri"
 
 module Nx
   class UsProxy
-    def self.fetch(proxy = "http://127.0.0.1:9090")
+    def self.fetch()
       doc = Nokogiri::HTML(
         open(
           "https://www.us-proxy.org/",
           read_timeout: 5,
-          proxy: proxy,
         )
       )
 
